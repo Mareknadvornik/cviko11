@@ -58,7 +58,6 @@ plt.ion()
 def bubble_sort(numbers):
     nums = numbers.copy()
     n = len(nums)
-
     for i in range(n):
         for j in range(0, n - i - 1):
             index_highlight1 = j
@@ -74,6 +73,7 @@ def bubble_sort(numbers):
             plt.pause(0.1)
 
             if nums[j] > nums[j + 1]:
+
                 nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
     return nums
@@ -84,3 +84,4 @@ print(bubble_sort(values))
 plt.ioff()
 plt.show()
 
+p
